@@ -1,0 +1,116 @@
+@media (max-width: 1240px){
+    .sct-items, .container02 .sct-items{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+    }
+
+    .container02 #novidadeBurger{
+        grid-column: 1/4;
+    }
+}
+
+@media (max-width: 930px){
+    #modal-shoplist #shoplist-items .sl-div-item{
+        grid-template-columns: 5fr 1fr 2fr;
+    }
+}
+
+@media (max-width: 816px){
+    #modal-shoplist{
+        width: 75vw;
+    }
+}
+
+@media (max-width: 790px){
+    header{
+        flex-direction: row-reverse;
+    }
+
+    header > div{
+        width: fit-content;
+    }
+
+    #hd-lks-ext{
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    .sct-items, .container02 .sct-items{
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .container02 #novidadeBurger{
+        width: 82%;
+        grid-column: 1/3;
+        height: 680px;
+    }
+}
+
+@media (max-width: 660px){
+    .container01 section div{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 570px){
+    header{
+        justify-content: space-between;
+    }
+
+    #hd-lks-int{
+        display: none;
+    }
+
+    #hd-lks-ext2{
+        display: block;
+    }
+}
+
+@media (max-width: 510px){
+    #modal-shoplist #shoplist-items .sl-div-item{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #modal-shoplist #shoplist-items .sl-div-item .sp-pdd{
+        grid-column: 1/3;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 460px){
+    .sct-items, .container02 .sct-items{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .container02 #novidadeBurger{
+        display: none;
+    }
+
+    .container02 #novidadeBurger2{
+        display: flex;
+    }
+}
+
+@media (max-width: 420px){
+    .container00 h1{
+        font-size: 2.3rem;
+    }
+
+    .container01 iframe{
+        width: 97%;
+    }
+
+    .title-cardapio{
+        font-size: 2rem;
+    }
+
+    #modal-shoplist h1{
+        font-size: 1.8rem;
+    }
+}

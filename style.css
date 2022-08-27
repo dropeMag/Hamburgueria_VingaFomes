@@ -1,0 +1,801 @@
+/*====================================================
+IMPORTAÇÃO
+====================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/*====================================================
+GERAL
+====================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    outline: none;
+}
+
+body{
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #000000, #202020, #090909, #1a1a1a, #131313) no-repeat;
+}
+
+:root{
+    --cor-01: #010506;
+    --cor-02: #f28705;
+    --cor-03: #af301a;
+}
+
+
+/*====================================================
+PADRÕES
+====================================================*/
+
+.wd-100{
+    width: 100%;
+}
+
+.dp-flex{
+    display: flex;
+}
+
+.dp-none{
+    display: none;
+}
+
+.over-hide{
+    overflow: hidden;
+}
+
+
+/* ---------------- HEADER */
+header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px;
+    height: fit-content;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header div{
+    align-items: center;
+    width: 282px;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ---------------- HEADER LINKS INTERNOS */
+header div#hd-lks-int{
+    gap: 8px;
+}
+
+header div#hd-lks-int a{
+    padding: 3px;
+    border-bottom: 1px solid transparent;
+    opacity: 70%;
+}
+
+header div#hd-lks-int a:hover{
+    border-bottom: 1px solid white;
+    opacity: 100%;
+}
+
+/* ---------------- HEADER LOGO EMPRESA */
+header img#logoImgOfc{
+    width: 55px;
+}
+
+header img#logoTxtOfc{
+    width: 140px;
+}
+
+/* ---------------- HEADER LINK EXTERNO */
+header div#hd-lks-ext{
+    justify-content: right;
+}
+
+header img#logoImgIfood{
+    width: 47px;
+    opacity: 70%;
+}
+
+header img#logoImgIfood:hover{
+    opacity: 100%;
+}
+
+/* ---------------- HEADER BOTÃO BURGER */
+#hd-lks-ext2{
+    display: none;
+}
+
+/* ---------------- HEADER BOTÃO EXTERNO */
+#hd-btn-ext{
+    position: fixed;
+    margin: auto;
+    width: 30%;
+    height: 60%;
+    top: 0;
+    right: 0;
+    background-color: var(--cor-01);
+    border-radius: 10px;
+    border: 1px solid var(--cor-02);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.445);
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 30px;
+    display: none;
+}
+
+#hd-btn-ext span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+#hd-btn-ext img#logoImgIfood{
+    margin-top: 30px;
+    width: 50%;
+}
+
+/* ---------------- CONTAINERS COM ITEMS */
+.container02, .container03, .container04, .container05{
+    padding: 45px 20px;
+    border-bottom: 2px dashed var(--cor-02);
+}
+
+
+/* ---------------- TÍTULO DAS SESSÕES */
+.titulo{
+    margin: auto;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.titulo h1{
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.titulo span{
+    width: 35%;
+    height: 2px;
+    background-color: var(--cor-02);
+}
+
+/* ---------------- SECTION DOS ITENS */
+.sct-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+}
+
+/* ---------------- DIV ITENS */
+.div-item{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 180px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-02);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.445);
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ---------------- DIV ITENS - TÍTULO */
+.div-item h2{
+    word-wrap: break-word;
+    height: 70px;
+    align-items: center;
+}
+
+/* ---------------- DIV ITENS - DESCRIÇÃO */
+.div-item p{
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* ---------------- DIV ITENS - PREÇO */
+.div-item h3{
+    padding: 8px 0;
+    border-bottom: 1px solid var(--cor-02);
+    position: absolute;
+    bottom: 65px;
+}
+
+.div-item h3::before{
+    content: 'R$ ';
+}
+
+/* ---------------- DIV ITENS - BOTÕES */
+.div-item-buttons{
+    position: absolute;
+    bottom: 20px;
+}
+
+.div-item-buttons .btn-more, .div-item-buttons .btn-less{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.div-item-buttons input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cor-02);
+    width: 40px;
+    text-align: center;
+    margin: 0 8px;
+}
+
+.div-item-buttons input::-webkit-outer-spin-button, .div-item-buttons input::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* ---------------- DIV ITENS - COVER */
+.div-item .div-item-cover{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--cor-02);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    transition: bottom, .5s;
+}
+
+
+/*====================================================
+MENU PRINCIPAL
+====================================================*/
+
+.menu-principal > div{
+    height: fit-content;
+}
+
+/* SECTION HEADER */
+.menu{
+    height: fit-content;
+}
+
+
+/*====================================================
+COINTAINER 00 - APRESENTAÇÃO
+====================================================*/
+
+.container00{
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+    background: url(img/container00/img.localLanchonete.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -3px;
+}
+
+.container00 .ctn00-txt{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 0 50px 0;
+}
+
+.container00 h1{
+    margin: auto;
+    width: 95%;
+    font-size: 3.125rem;
+    font-style: italic;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.container00 p:nth-child(2){
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.container00 p:nth-child(3){
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.container00 p:nth-child(3) strong{
+    border-bottom: 1px solid var(--cor-02);
+    color: var(--cor-02);
+}
+
+.container00 p:nth-child(3) strong:hover{
+    border-bottom: 1px solid var(--cor-03);
+    color: var(--cor-03);
+}
+
+.container00 a:nth-child(4){
+    display: block;
+    margin: auto;
+    width: fit-content;
+    background-color: var(--cor-02);
+    padding: 6px 33px;
+    margin-top: 60px;
+    border-radius: 30px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.container00 a:nth-child(4):hover{
+    background-color: var(--cor-03);
+}
+
+
+/*====================================================
+COINTAINER 01 - CONTATO
+====================================================*/
+
+.container01{
+    padding: 50px;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container01 iframe{
+    width: 400px;
+    height: 300px; 
+    border: none;
+    border-radius: 10px;
+}
+
+.container01 section h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container01 section div{
+    justify-content: space-between;
+}
+
+.container01 section div h3{
+    gap: 7px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+
+/*====================================================
+CARRINHO
+====================================================*/
+
+.carrinho{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+    background-color: var(--cor-02);
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.carrinho:hover{
+    background-color: var(--cor-01);
+}
+
+.carrinho span{
+    color: var(--cor-01);
+    font-size: 30px;
+}
+
+.carrinho:hover span{
+    color: var(--cor-02);
+}
+
+
+/*====================================================
+BACKGROUND MODAL SHOPLIST
+====================================================*/
+
+#bg-modal-shoplist{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.765);
+}
+
+/*====================================================
+MODAL SHOPLIST
+====================================================*/
+
+#modal-shoplist{
+    height: 70vh;
+    width: 60vw;
+    position: fixed;
+    justify-content: space-evenly;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-01);
+    border: 1px solid var(--cor-02);
+    border-radius: 10px;
+}
+
+#modal-shoplist h1{
+    font-size: 2.188rem;
+    color: var(--cor-02);
+    border-bottom: 1px solid var(--cor-02);
+}
+
+#modal-shoplist #shoplist-items{
+    width: 90%;
+    height: 65%;
+    border-radius: 10px;
+    border: 1px solid var(--cor-01);
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#modal-shoplist #shoplist-items::-webkit-scrollbar{
+    display: none;
+}
+
+#modal-shoplist #shoplist-items .sl-div-item{
+    display: grid;
+    grid-template-columns: 10fr 1fr 2fr;
+    border-bottom: 1px solid white;
+}
+
+.sp-pdd, .sp-qnt, .sp-valor{
+    padding: 8px 0;
+    text-align: center;
+}
+
+.sp-pdd{
+    text-align: left;
+}
+
+/* .sp-excluir{
+    cursor: pointer;
+    color: var(--cor-02);
+    font-weight: bolder;
+} */
+
+#modal-shoplist button{
+    background-color: var(--cor-02);
+    padding: 7px 15px;
+    font-size: 18px;
+    color: var(--cor-01);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--cor-02);
+}
+
+#modal-shoplist button:hover{
+    background-color: var(--cor-01);
+    color: var(--cor-02);
+}
+
+/*====================================================
+HEADER CARDÁPIO
+====================================================*/
+
+.header-cardapio{
+    position: relative;
+}
+
+
+/*====================================================
+TÍTULO CARDÁPIO
+====================================================*/
+
+.title-cardapio{
+    margin: auto;
+    width: fit-content;
+    font-size: 2.813rem;
+    padding: 20px 0;
+}
+
+.title-cardapio h1{
+    border-top: 1px solid var(--cor-02);
+    border-bottom: 1px solid var(--cor-02);
+    padding: 3px 30px;
+}
+
+
+/*====================================================
+COINTAINER 02 - HAMBURGUER
+====================================================*/
+
+.container02 .sct-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container02 .div-item{
+    height: 310px;
+}
+
+.container02 .div-item .div-item-cover{
+    height: 73%;
+}
+
+.container02 .div-item:hover .div-item-cover{
+    bottom: -73%;
+}
+
+.cover00{
+    background: url(img/hamburgueres/img.burger.novidade.jpg) no-repeat center;
+}
+
+.cover01{
+    background: url(img/hamburgueres/img.burger.cover01.jpg) no-repeat center;
+}
+
+.cover02{
+    background: url(img/hamburgueres/img.burger.cover02.jpg) no-repeat center;
+}
+
+.cover03{
+    background: url(img/hamburgueres/img.burger.cover03.jpg) no-repeat center;
+}
+
+.cover04{
+    background: url(img/hamburgueres/img.burger.cover04.jpg) no-repeat center;
+}
+
+.cover05{
+    background: url(img/hamburgueres/img.burger.cover05.jpg) no-repeat center;
+}
+
+.cover06{
+    background: url(img/hamburgueres/img.burger.cover06.jpg) no-repeat center;
+}
+
+
+.container02 #novidadeBurger{
+    grid-column: 1/3;
+    width: 523.5px;
+    grid-row: 1/3;
+    height: 660px;
+    padding: 10px 40px;
+}
+
+.container02 #novidadeBurger h1{
+    font-size: 55px;
+    color: var(--cor-02);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 7px;
+    border-bottom: 1px solid var(--cor-02);
+}
+
+.container02 #novidadeBurger h2{
+    font-size: 35px;
+}
+
+.container02 #novidadeBurger .novidImg{
+    margin-top: 30px;
+    height: 45%;
+    width: 70%;
+    border-radius: 10px;
+    background: url(img/hamburgueres/img.burger.novidade.jpg) no-repeat center;
+    background-size: cover;
+    border: 1px solid var(--cor-02);
+}
+
+.container02 #novidadeBurger2{
+    height: 365px;
+    display: none;
+}
+
+.container02 #novidadeBurger2 .div-item-cover{
+    height: 68%;
+}
+
+.container02 #novidadeBurger2:hover .div-item-cover{
+    bottom: -68%;
+}
+
+.container02 #novidadeBurger2 h1{
+    color: var(--cor-02);
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid var(--cor-02);
+}
+
+/*====================================================
+COINTAINER 03 - LANCHES
+====================================================*/
+
+.container03 .div-item{
+    height: 300px;
+}
+
+.cover07{
+    background: url(img/lanches/img.lanche.cover07.jpg) no-repeat center;
+}
+
+.cover08{
+    background: url(img/lanches/img.lanche.cover08.jpg) no-repeat center;
+}
+
+.cover09{
+    background: url(img/lanches/img.lanche.cover09.jpg) no-repeat center;
+}
+
+.cover10{
+    background: url(img/lanches/img.lanche.cover10.jpg) no-repeat center;
+}
+
+.cover11{
+    background: url(img/lanches/img.lanche.cover11.jpg) no-repeat center;
+}
+
+.cover12{
+    background: url(img/lanches/img.lanche.cover12.jpg) no-repeat center;
+}
+
+.container03 .div-item .div-item-cover{
+    height: 72%;
+}
+
+.container03 .div-item:hover .div-item-cover{
+    bottom: -72%;
+}
+
+
+/*====================================================
+COINTAINER 04 - PORCOES
+====================================================*/
+
+.container04 .div-item{
+    height: 260px;
+}
+
+.cover13{
+    background: url(img/porcoes/img.porcoes.cover13.jpg) no-repeat center;
+}
+
+.cover14{
+    background: url(img/porcoes/img.porcoes.cover14.jpg) no-repeat center;
+}
+
+.cover15{
+    background: url(img/porcoes/img.porcoes.cover15.jpg) no-repeat center;
+}
+
+.cover16{
+    background: url(img/porcoes/img.porcoes.cover16.jpg) no-repeat center;
+}
+
+.cover17{
+    background: url(img/porcoes/img.porcoes.cover17.jpg) no-repeat center;
+}
+
+.cover18{
+    background: url(img/porcoes/img.porcoes.cover18.jpg) no-repeat center;
+}
+
+.container04 .div-item .div-item-cover{
+    height: 69%;
+}
+
+.container04 .div-item:hover .div-item-cover{
+    bottom: -69%;
+}
+
+
+/*====================================================
+COINTAINER 05 - BEBIDAS
+====================================================*/
+
+.container05{
+    border: none;
+}
+
+.container05 .div-item{
+    height: 400px;
+    height: fit-content;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.container05 .div-item p{
+    word-wrap: break-word;
+    height: 70px;
+    align-items: center;
+    height: fit-content;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.container05 .div-item h2{
+    font-size: 14px;
+    font-weight: 500;
+    height: fit-content;
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.container05 .div-item h3{
+    position: relative;
+    padding: 0;
+    bottom: 0;
+    margin: 3px 0 10px 0;
+}
+
+.container05 .div-item-buttons{
+    bottom: 0;
+    position: relative;
+}
+
+
+/*====================================================
+FOOTER
+====================================================*/
+
+footer{
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 13px;
+    border-top: 1px solid white;
+    background: #010506;
+}
+
+footer #ftr-vf-id #logoImgOfc{
+    width: 40px;
+    margin-right: 6px;
+}
+
+footer #ftr-vf-id #logoTxtOfc{
+    width: 130px;
+}
+
+footer #creditos{
+    margin-top: 20px;
+    padding: 6px 33px;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+footer #creditos:hover{
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+footer #creditos h4{
+    color: var(--cor-01);
+}
+
+footer #creditos:hover h4{
+    color: white;
+}

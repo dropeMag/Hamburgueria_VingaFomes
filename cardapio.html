@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hamburgueria, lanches, comida, vingafomes, brasília, cardápio">
+    <meta name="description" content="VingaFomes: a melhor opção para você combater a sua fome com poder, qualidade e muito sabor!!">
+    <title>VingaFomes | Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/logo/ico.logo.vingafomes.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"/>
+</head>
+<body id="body">
+    <div id="hd-btn-ext" class="dp-flex">
+        <span class="material-symbols-outlined">close</span>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="#contato">Contato</a>
+        <a href="#">Desenvolvedor</a>
+        <a href="https://www.ifood.com.br/">
+            <img src="img/logo/img.logo.ifood.png" alt="" id="logoImgIfood">
+        </a>
+    </div>
+
+    <section class="carrinho" id="btn-shopcart">
+        <span class="material-symbols-outlined">shopping_cart</span>
+    </section>
+
+    <section class="dp-none" id="bg-modal-shoplist"></section>
+
+    <section class="dp-none dp-flex" id="modal-shoplist">
+        <h1>CARRINHO</h1>
+        <div id="shoplist-items"></div>
+        <button>Pedir</button>
+    </section>
+
+    <header class="wd-100 dp-flex header-cardapio">
+        <div id="hd-lks-ext2">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    
+        <div id="hd-lks-int" class="dp-flex">
+            <a href="index.html">Home</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="#">Desenvolvedor</a>
+        </div>
+
+        <div id="hd-vf-id" class="dp-flex">
+            <img src="img/logo/img.logo.vingafomes.png" alt="" id="logoImgOfc">
+            <img src="img/logo/img.name.vingafomes.png" alt="" id="logoTxtOfc">
+        </div>
+        
+        <div id="hd-lks-ext" class="dp-flex">
+            <a href="https://www.ifood.com.br/">
+                <img src="img/logo/img.logo.ifood.png" alt="" id="logoImgIfood">
+            </a>
+        </div>
+    </header>    
+        
+    <section class="title-cardapio">
+        <h1>Cardápio</h1>
+    </section>
+
+    <section class="container02">
+        <div class="titulo dp-flex">
+            <h1>Burgers</h1>
+            <span></span>
+        </div>
+        <section class="sct-items">
+            <div class="div-item dp-flex" id="novidadeBurger">
+                <h1 class="dp-flex">NOVIDADE</h1>
+                <h2 class="dp-flex">Picanha-Man</h2>
+                <p>Pão Brioche da Casa, Maionese de Alho Picante, Hambúrguer de Picanha, Queijo Cheddar, Alface Roxa, Tomate, Creme de Mix de Nozes e Milho Grelhado</p>
+                <h3>23.45</h3>
+                <div class="novidImg"></div>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0" min="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+            <div class="div-item dp-flex"  id="novidadeBurger2">
+                <h1 class="dp-flex">NOVIDADE</h1>
+                <h2 class="dp-flex">Picanha-Man</h2>
+                <p>Pão Brioche da Casa, Maionese de Alho Picante, Hambúrguer de Picanha, Queijo Cheddar, Alface Roxa, Tomate, Creme de Mix de Nozes e Milho Grelhado</p>
+                <h3>23.45</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover00"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Burger de Ferro</h2>
+                <p>Pão da Casa, Maionese Verde, Hambúrguer, Queijos Muçarela e Brie, Geleia de Pimenta e Rúcula</p>
+                <h3>23.45</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover01"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Capitão Cheddar</h2>
+                <p>Pão Australiano, Maionese da Casa, Hambúrguer, Cheddar, Cebola Caramelizada e Bacon Crocante</p>
+                <h3>21.89</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover02"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Cathorpiry</h2>
+                <p>Pão da Casa, Molho de Tomate da Casa, Hambúrguer, Catupiry e Bacon Crocante</p>
+                <h3>22.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover03"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Costela Negra</h2>
+                <p>Pão e Maionese da Casa, Hambúrguer de Costela, Queijo Provolone, Bacon Crocante, Molho Barbecue e Cebola</p>
+                <h3>24.25</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover04"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Fraldinha Escarlate</h2>
+                <p>Pão e Maionese da Casa, Hambúrguer de Fraldinha, Queijo Muçarela, Molho de Mostarda e Rúcula</p>
+                <h3>22.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover05"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Capitã Queijo</h2>
+                <p>Pão e Molho da Casa, Hambúrguer coberto com os Queijos Muçarela, Provolone, Catupiry e Gorgonzola</p>
+                <h3>23.45</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover06"></div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container03">
+        <div class="titulo dp-flex">
+            <h1>Lanches</h1>
+            <span></span>
+        </div>
+        <section class="sct-items">
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Pantera Quente</h2>
+                <p>Salsicha, Carna Moída, Frango, Milho, Ervilhas, Batata Palha e Queijo Ralado</p>
+                <h3>16.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover07"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Nick Frango</h2>
+                <p>Salsicha, Frango, Milho, Ervilhas, Batata Palha e Queijo Ralado</p>
+                <h3>17.89</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover08"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Cheddar Arqueiro</h2>
+                <p>Salsicha com Cheddar, Carne Moída, Milho, Ervilhas, Batata Palha e Queijo Ralado</p>
+                <h3>18.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover09"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">CatupiHulck</h2>
+                <p>Salsicha, Catupiry, Frango, Milho, Ervilhas, Batata Palha e Queijo Ralado</p>
+                <h3>18.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover10"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Strogo-thanos</h2>
+                <p>Pão de Leite Ninho, Salsicha, Strogonoff, Catupiry, Milho, Ervilha e Batata Palha</p>
+                <h3>19.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover11"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Calabresa Invernal</h2>
+                <p>Salsicha, Calabresa, Bacon, Milho, Ervilhas, Batata Palha e Queijo Ralado</p>
+                <h3>18.65</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover12"></div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container04">
+        <div class="titulo dp-flex">
+            <h1>Porções</h1>
+            <span></span>
+        </div>
+        <section class="sct-items">
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Anéis do Espaço</h2>
+                <p>Acompanha Maionese de Pimenta</p>
+                <h3>12.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover13"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Batatas da Mente</h2>
+                <p>Batatas Rústicas com Maionese da Casa</p>
+                <h3>11.89</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover14"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Palitos da Realidade</h2>
+                <p>Acompanha Maionese de Pimenta</p>
+                <h3>18.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover15"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Fritas do Poder</h2>
+                <p>Fritas com Molho de Queijo Cremoso e Bacon</p>
+                <h3>18.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover16"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Mandioca da Alma</h2>
+                <p>Acompanha Maionese de Alho e Ervas</p>
+                <h3>19.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover17"></div>
+            </div>
+            <div class="div-item dp-flex">
+                <h2 class="dp-flex">Nuggets do Tempo</h2>
+                <p>Acompanha Barbecue da Casa</p>
+                <h3>18.65</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+                <div class="div-item-cover cover18"></div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container05">
+        <div class="titulo dp-flex">
+            <h1>Bebidas</h1>
+            <span></span>
+        </div>
+        <section class="sct-items">
+            <div class="div-item dp-flex">
+                <p class="dp-flex">Água</p>
+
+                <h2>Água sem Gás</h2>
+                <h3>2.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Água com Gás</h2>
+                <h3>4.00</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+            <div class="div-item dp-flex">
+                <p class="dp-flex">Sucos</p>
+
+                <h2>Suco de Laranja</h2>
+                <h3>8.80</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Suco de Manga</h2>
+                <h3>8.80</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Suco de Abacaxi</h2>
+                <h3>8.80</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+            <div class="div-item dp-flex">
+                <p class="dp-flex">Refrigerante</p>
+
+                <h2>Coca Cola</h2>
+                <h3>5.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Fanta Guaraná</h2>
+                <h3>5.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Fanta Laranja</h2>
+                <h3>5.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+            <div class="div-item dp-flex">
+                <p class="dp-flex">Latinha</p>
+
+                <h2>Heineken Lata</h2>
+                <h3>4.59</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Itaipava Lata</h2>
+                <h3>2.19</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Brahma Lata</h2>
+                <h3>3.29</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+            <div class="div-item dp-flex">
+                <p class="dp-flex">Long Neck</p>
+
+                <h2>Long Heineken</h2>
+                <h3>5.99</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Long Itaipava</h2>
+                <h3>3.09</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Long Brahma</h2>
+                <h3>4.49</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+            <div class="div-item dp-flex">
+                <p class="dp-flex">Torre 3L</p>
+
+                <h2>Torre Heineken</h2>
+                <h3>41.50</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+
+                <h2>Torre Amstel</h2>
+                <h3>35.65</h3>
+                <div class="div-item-buttons dp-flex">
+                    <button class="btn-less">-</button>
+                    <input type="number" name="qntPedido" id="" placeholder="0">
+                    <button class="btn-more">+</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="dp-flex">    
+        <div id="ftr-vf-id" class="dp-flex">
+            <img src="img/logo/img.logo.vingafomes.png" alt="" id="logoImgOfc">
+            <img src="img/logo/img.name.vingafomes.png" alt="" id="logoTxtOfc">
+        </div>
+        <div>
+            <p>&copy;VingaFomes 2022</p>
+        </div>
+        <div id="creditos">
+            <h4>CRÉDITOS</h4>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+<!-- 
+    img.burger.novidade: Foto de Moisés Delgado: https://www.pexels.com/pt-br/foto/hamburguer-sanduiche-cheeseburger-x-burguer-10861569/
+
+    img.burger.cover01: Foto de Rajesh TP: https://www.pexels.com/pt-br/foto/foto-de-close-up-de-um-hamburguer-de-queijo-1633578/
+    
+    img.burger.cover02: Foto de Valeria Boltneva: https://www.pexels.com/pt-br/foto/hamburguer-com-batatas-fritas-em-prato-preto-com-molho-ao-lado-1199957/
+
+    img.burger.cover03: Foto de rajdeepcraft: https://www.pexels.com/pt-br/foto/sanduiche-cheeseburger-x-burguer-x-burger-6427675/
+
+    img.burger.cover04: Foto de Horizon Content: https://www.pexels.com/pt-br/foto/garrafa-de-cerveja-pao-queijo-cheeseburger-4392661/
+
+    img.burger.cover05:  Foto de Anna Tukhfatullina Food Photographer/Stylist: https://www.pexels.com/pt-br/foto/hamburguer-com-fatias-de-legumes-fotografia-primeiro-plano-2702674/
+
+    img.burger.cover06: Foto de Daniel Reche: https://www.pexels.com/pt-br/foto/foto-de-hamburguer-ao-lado-do-fogo-3616956/
+
+
+    img.lanches.cover07: Foto de Jer Chung: https://www.pexels.com/pt-br/foto/sanduiche-de-linguica-footlong-2204769/
+
+    img.lanches.cover08: <a href="https://www.freepik.com/free-photo/hotdog-with-ketchup-mustard-lettuce-wooden-table_7681515.htm?query=hot%20dog">Image by timolina</a> on Freepik
+
+    img.lanches.cover09: Photo by <a href="https://unsplash.com/@ballparkbrand?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ball Park Brand</a> on <a href="https://unsplash.com/s/photos/hot-dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    img.lanches.cover10: Photo by <a href="https://unsplash.com/@mr_wdh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">王 大洪</a> on <a href="https://unsplash.com/s/photos/hot-dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    img.lanches.cover11: Image by <a href="https://www.freepik.com/free-photo/high-angle-hot-dog-with-salad-corn_9901332.htm#query=hot%20dog&position=4&from_view=search">Freepik</a>
+
+    img.lanches.cover12: Photo by <a href="https://unsplash.com/@jarritos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jarritos Mexican Soda</a> on <a href="https://unsplash.com/s/photos/hot-dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+
+    img.porcoes.cover13: Foto de Pixabay: https://www.pexels.com/pt-br/foto/calamares-fritos-no-pires-263049/
+
+    img.porcoes.cover14: Foto de Khan Mohammad Nasif: https://www.pexels.com/pt-br/foto/recipiente-conteiner-copo-taca-9932888/
+
+    img.porcoes.cover15: <a href="https://www.freepik.com/free-photo/concept-tasty-food-with-chicken-strips-close-up_24348404.htm#query=nuggets&position=38&from_view=search">Image by atlascompany</a> on Freepik
+
+    img.porcoes.cover16: Foto de Valeria Boltneva: https://www.pexels.com/pt-br/foto/batatas-fritas-com-molho-de-imersao-1893556/
+
+    img.porcoes.cover17: Foto de Meggy Kadam Aryanto: https://www.pexels.com/pt-br/foto/tigela-bowl-bacia-frango-7375470/
+
+    img.porcoes.cover18: Foto de Meggy Kadam Aryanto: https://www.pexels.com/pt-br/foto/frango-galinha-chili-crocante-7375449/
+
+ -->
