@@ -11,7 +11,7 @@ A VingaFomes é uma empresa alimentícia fictícia, cuja identidade visual é in
 O site desta empresa vem sido desenvolvido para o projeto final do curso de Desenvolvedor Front-End. 
 
 ### 💻 Site da Empresa:
-https://pedro-magalhaex.github.io/Hamburgueria_VingaFomes/
+https://dropemag.github.io/Hamburgueria_VingaFomes/
 
 ### 📌 Atributos:
 - [x] Página de entrada;
