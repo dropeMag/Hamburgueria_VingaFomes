@@ -17,7 +17,7 @@ https://dropemag.github.io/Hamburgueria_VingaFomes/
 - [x] Página de entrada;
 - [x] Cardápio;
 - [ ] Página de Créditos e Agradecimentos;
-- [ ] Página com informações do desenvolvedor;
+- [x] Página com informações do desenvolvedor;
 - [x] Modal com Carrinho de Compras;
 - [ ] Modal com "Pedido Realizado".
 
