@@ -15,6 +15,34 @@
     }
 }
 
+@media (max-width: 870px){
+    .main-dev{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding-top: 5rem;
+        gap: 3rem;
+    }
+
+    .main-dev > section{
+        width: fit-content;
+        max-width: 35rem;
+        align-items: center;
+    }
+    
+    .main-dev .mainDev-secTxt{
+        padding: 1rem;
+    }
+    
+    .main-dev .mainDev-secTxt h1{
+        font-size: 3rem;
+    }
+
+    .main-dev .mainDev-secTxt p, .main-dev .mainDev-secTxt nav{
+        width: 100%;
+    }
+}
+
 @media (max-width: 816px){
     #modal-shoplist{
         width: 75vw;
