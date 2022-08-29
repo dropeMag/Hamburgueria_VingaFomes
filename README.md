@@ -2,6 +2,8 @@
 
 <p align="center">A hamburgueria dos heróis servindo um verdadeiro sabor poderoso!</p>
 
+![Imagem chamativa do menu de entrada do site oficial da empresa VingaFomes](https://user-images.githubusercontent.com/107576199/187297116-f65d4e14-3de0-4d6c-8b0e-3d14d0fb3ca8.jpg)
+
 ---
 
 <h4 align="center"> :construction: Projeto em Desenvolvimento :construction: </h4>
@@ -16,10 +18,12 @@ https://dropemag.github.io/Hamburgueria_VingaFomes/
 ### 📌 Atributos:
 - [x] Página de entrada;
 - [x] Cardápio;
-- [x] Página de Créditos;
-- [x] Página com informações do desenvolvedor;
-- [x] Modal com Carrinho de Compras;
-- [ ] Modal com "Pedido Realizado".
+- [x] Modal com carrinho de compras;
+- [ ] Modal de pedido realizado;
+- [x] Página do desenvolvedor;
+- [x] Informações de contato;
+- [x] Página de créditos;
+- [x] Responsividade.
 
 ### 🛠 Ferramentas:
 * HTML;
