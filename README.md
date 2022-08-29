@@ -16,7 +16,7 @@ https://dropemag.github.io/Hamburgueria_VingaFomes/
 ### 📌 Atributos:
 - [x] Página de entrada;
 - [x] Cardápio;
-- [ ] Página de Créditos e Agradecimentos;
+- [x] Página de Créditos;
 - [x] Página com informações do desenvolvedor;
 - [x] Modal com Carrinho de Compras;
 - [ ] Modal com "Pedido Realizado".
