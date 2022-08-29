@@ -9,9 +9,20 @@ let btnMore = document.querySelectorAll('.btn-more')
 let inputQnt = document.querySelectorAll('input[name="qntPedido"]')
 let nomePedido = document.querySelectorAll('h2')
 let valorPedido = document.querySelectorAll('h3')
+let openBurger = document.querySelector('.hd-lks-ext2')
+let closeBurger = document.querySelector('.hd-lks-ext3')
+let menuBurger = document.querySelector('.hd-btn-ext')
 
+// ABRIR MENU BURGER
+openBurger.addEventListener('click', ()=>{
+    menuBurger.style.display = 'flex'
+    
+})
 
-
+// FECHAR MENU BURGER
+closeBurger.addEventListener('click', ()=>{
+    menuBurger.style.display = 'none'
+})
 
 // ABRIR E FECHAR O MODAL
 abrirModal.map((opc) => {
@@ -52,6 +63,12 @@ shopcart.addEventListener('click', ()=>{
 
 
 
+
+
+
+
+
+
 // function cu(queima){
 //     let listaItemExcluir = queima.closest(".sl-div-item")
 //     let listaPrecoExcluir = queima.closest(listaPrecos)
@@ -60,9 +77,3 @@ shopcart.addEventListener('click', ()=>{
 // }
 
 // <p class="sp-excluir" onclick="cu(event.target)">X</p>
-
-
-
-
-
-

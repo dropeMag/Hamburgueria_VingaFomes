@@ -22,6 +22,7 @@ GERAL
 
 body{
     overflow-x: hidden;
+    min-height: 100vh;
     background: linear-gradient(135deg, #000000, #252525, #131313, #1a1a1a, #131313) no-repeat;
 }
 
@@ -112,12 +113,12 @@ header img#logoImgIfood:hover{
 }
 
 /* ---------------- HEADER BOTÃO BURGER */
-#hd-lks-ext2{
+.hd-lks-ext2{
     display: none;
 }
 
 /* ---------------- HEADER BOTÃO EXTERNO */
-#hd-btn-ext{
+.hd-btn-ext{
     position: fixed;
     margin: auto;
     width: 30%;
@@ -137,14 +138,14 @@ header img#logoImgIfood:hover{
     display: none;
 }
 
-#hd-btn-ext span{
+.hd-btn-ext span{
     position: absolute;
     top: 0;
     right: 0;
     margin: 20px;
 }
 
-#hd-btn-ext img#logoImgIfood{
+.hd-btn-ext img#logoImgIfood{
     margin-top: 30px;
     width: 50%;
 }
@@ -761,7 +762,6 @@ LANDINGPAGE DESENVOLVEDOR
 ====================================================*/
 
 .main-dev{
-    min-height: 100vh;
     width: 100vw;
     padding-top: 3.5rem;
 }
@@ -830,14 +830,51 @@ LANDINGPAGE DESENVOLVEDOR
 }
 
 
+/*====================================================
+LANDINGPAGE CRÉDITOS
+====================================================*/
 
+.main-cred{
+    width: 100vw;
+    padding-top: 4rem;
+    margin-bottom: 1.5rem;
+}
 
+.main-cred h1{
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 2.7rem;
+    border-top: 1px solid var(--cor-02);
+    border-bottom: 1px solid var(--cor-02);
+    width: fit-content;
+}
 
+.main-cred section{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: .8rem;
+    padding: 0 .8rem;
+}
 
+.main-cred section ul{
+    width: 18.5rem;
+}
 
+.main-cred section ul h2{
+    height: 4.1rem;
+    align-items: center;
+    border-bottom: 1px solid var(--cor-02);
+    margin-bottom: 1rem;
+}
 
+.main-cred section ul li{
+    margin-bottom: .6rem;
+    text-indent: .5rem;
+}
 
-
+.main-cred section ul li a:hover{
+    color: var(--cor-02);
+}
 
 
 /*====================================================
