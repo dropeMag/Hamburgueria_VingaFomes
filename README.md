@@ -2,7 +2,9 @@
 
 <p align="center">A hamburgueria dos heróis servindo um verdadeiro sabor poderoso!</p>
 
-![Imagem chamativa do menu de entrada do site oficial da empresa VingaFomes](https://user-images.githubusercontent.com/107576199/187297116-f65d4e14-3de0-4d6c-8b0e-3d14d0fb3ca8.jpg)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/107576199/187297116-f65d4e14-3de0-4d6c-8b0e-3d14d0fb3ca8.jpg" alt="Imagem chamativa do menu de entrada do site oficial da empresa VingaFomes" href="https://dropemag.github.io/Hamburgueria_VingaFomes/" width="700px">
+</div>
 
 ---
 
