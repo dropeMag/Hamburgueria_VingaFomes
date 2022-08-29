@@ -53,12 +53,24 @@ PADRÕES
     overflow: hidden;
 }
 
+.bdr-rad10{
+    border-radius: .625rem;
+}
+
+.bdr-rad30{
+    border-radius: 1.875rem;
+}
+
+.bdr-sld-var2{
+    border: .063rem solid var(--cor-02);
+}
+
 
 /* ---------------- HEADER */
 header{
     align-items: center;
     justify-content: space-between;
-    padding: 7px 20px;
+    padding: .44rem 1.25rem;
     height: fit-content;
     z-index: 1;
     position: absolute;
@@ -68,34 +80,35 @@ header{
 
 header div{
     align-items: center;
-    width: 282px;
+    width: 17.625rem;
     justify-content: center;
-    gap: 10px;
+    gap: .625rem;
 }
 
 /* ---------------- HEADER LINKS INTERNOS */
 header div#hd-lks-int{
-    gap: 8px;
+    gap: .5rem;
 }
 
 header div#hd-lks-int a{
-    padding: 3px;
-    border-bottom: 1px solid transparent;
+    padding: .188rem;
+    border-bottom: .063rem solid transparent;
     opacity: 70%;
+    transition: opacity .5s, border-bottom .5s;
 }
 
 header div#hd-lks-int a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: .063rem solid white;
     opacity: 100%;
 }
 
 /* ---------------- HEADER LOGO EMPRESA */
 header img#logoImgOfc{
-    width: 55px;
+    width: 3.438rem;
 }
 
 header img#logoTxtOfc{
-    width: 140px;
+    width: 8.75rem;
 }
 
 /* ---------------- HEADER LINK EXTERNO */
@@ -104,8 +117,9 @@ header div#hd-lks-ext{
 }
 
 header img#logoImgIfood{
-    width: 47px;
+    width: 2.938rem;
     opacity: 70%;
+    transition: opacity .3s;
 }
 
 header img#logoImgIfood:hover{
@@ -121,20 +135,20 @@ header img#logoImgIfood:hover{
 .hd-btn-ext{
     position: fixed;
     margin: auto;
-    width: 30%;
+    width: fit-content;
     height: 60%;
     top: 0;
     right: 0;
     background-color: var(--cor-01);
-    border-radius: 10px;
-    border: 1px solid var(--cor-02);
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.445);
+    border-radius: .625rem;
+    border: .063rem solid var(--cor-02);
+    box-shadow: 0 .438rem 1.25rem rgba(0, 0, 0, 0.445);
     z-index: 2;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 1.875rem;
     display: none;
 }
 
@@ -142,18 +156,18 @@ header img#logoImgIfood:hover{
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .hd-btn-ext img#logoImgIfood{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 50%;
 }
 
 /* ---------------- CONTAINERS COM ITEMS */
 .container02, .container03, .container04, .container05{
-    padding: 45px 20px;
-    border-bottom: 2px dashed var(--cor-02);
+    padding: 2.813rem 1.25rem;
+    border-bottom: .125rem dashed var(--cor-02);
 }
 
 
@@ -162,18 +176,18 @@ header img#logoImgIfood:hover{
     margin: auto;
     flex-direction: column;
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .titulo h1{
     font-family: 'Dancing Script', cursive, sans-serif;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 500;
 }
 
 .titulo span{
     width: 35%;
-    height: 2px;
+    height: .125rem;
     background-color: var(--cor-02);
 }
 
@@ -181,20 +195,20 @@ header img#logoImgIfood:hover{
 .sct-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 40px;
+    row-gap: 2.5rem;
 }
 
 /* ---------------- DIV ITENS */
 .div-item{
     margin: auto;
     background-color: rgba(0, 0, 0, 0.267);
-    width: 180px;
-    border-radius: 10px;
-    border: 1px solid var(--cor-02);
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.7);
+    width: 11.25rem;
+    border-radius: .625rem;
+    border: .063rem solid var(--cor-02);
+    box-shadow: 0 0 .625rem .188rem rgba(0, 0, 0, 0.7);
     overflow: hidden;
     position: relative;
-    padding: 10px;
+    padding: .625rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -203,23 +217,23 @@ header img#logoImgIfood:hover{
 /* ---------------- DIV ITENS - TÍTULO */
 .div-item h2{
     word-wrap: break-word;
-    height: 70px;
+    height: 4.375rem;
     align-items: center;
 }
 
 /* ---------------- DIV ITENS - DESCRIÇÃO */
 .div-item p{
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: .875rem;
+    margin: .625rem 0;
     font-weight: 500;
 }
 
 /* ---------------- DIV ITENS - PREÇO */
 .div-item h3{
-    padding: 8px 0;
-    border-bottom: 1px solid var(--cor-02);
+    padding: .5rem 0;
+    border-bottom: .063rem solid var(--cor-02);
     position: absolute;
-    bottom: 65px;
+    bottom: 4.063rem;
 }
 
 .div-item h3::before{
@@ -229,23 +243,23 @@ header img#logoImgIfood:hover{
 /* ---------------- DIV ITENS - BOTÕES */
 .div-item-buttons{
     position: absolute;
-    bottom: 20px;
+    bottom: 1.25rem;
 }
 
 .div-item-buttons .btn-more, .div-item-buttons .btn-less{
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
 }
 
 .div-item-buttons input{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--cor-02);
-    width: 40px;
+    border-bottom: .063rem solid var(--cor-02);
+    width: 2.5rem;
     text-align: center;
-    margin: 0 8px;
+    margin: 0 .5rem;
 }
 
 .div-item-buttons input::-webkit-outer-spin-button, .div-item-buttons input::-webkit-inner-spin-button {
@@ -255,8 +269,8 @@ header img#logoImgIfood:hover{
 /* ---------------- DIV ITENS - COVER */
 .div-item .div-item-cover{
     width: 100%;
-    border-radius: 10px;
-    border: 1px solid var(--cor-02);
+    border-radius: .625rem;
+    border: .063rem solid var(--cor-02);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -286,18 +300,18 @@ COINTAINER 00 - APRESENTAÇÃO
 .container00{
     height: 100%;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     background: url(img/container00/img.localLanchonete.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: -3px;
+    margin-top: -.188rem;
 }
 
 .container00 .ctn00-txt{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
-    padding: 10px 0 50px 0;
+    padding: .625rem 0 3.125rem 0;
 }
 
 .container00 h1{
@@ -305,31 +319,31 @@ COINTAINER 00 - APRESENTAÇÃO
     width: 95%;
     font-size: 3.125rem;
     font-style: italic;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
+    border-bottom: .063rem solid white;
+    padding-bottom: .313rem;
 }
 
 .container00 p:nth-child(2){
     width: 70%;
     margin: auto;
-    margin-top: 30px;
-    font-size: 17px;
+    margin-top: 1.875rem;
+    font-size: 1.063rem;
 }
 
 .container00 p:nth-child(3){
     width: 90%;
     margin: auto;
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
 }
 
 .container00 p:nth-child(3) strong{
-    border-bottom: 1px solid var(--cor-02);
+    border-bottom: .063rem solid var(--cor-02);
     color: var(--cor-02);
 }
 
 .container00 p:nth-child(3) strong:hover{
-    border-bottom: 1px solid var(--cor-03);
+    border-bottom: .063rem solid var(--cor-03);
     color: var(--cor-03);
 }
 
@@ -338,10 +352,9 @@ COINTAINER 00 - APRESENTAÇÃO
     margin: auto;
     width: fit-content;
     background-color: var(--cor-02);
-    padding: 6px 33px;
-    margin-top: 60px;
-    border-radius: 30px;
-    font-size: 19px;
+    padding: .375rem 2.063rem;
+    margin-top: 3.75rem;
+    font-size: 1.188rem;
     cursor: pointer;
 }
 
@@ -355,21 +368,20 @@ COINTAINER 01 - CONTATO
 ====================================================*/
 
 .container01{
-    padding: 50px;
-    gap: 25px;
+    padding: 3.125rem;
+    gap: 1.563rem;
     flex-direction: column;
     align-items: center;
 }
 
 .container01 iframe{
-    width: 400px;
-    height: 300px; 
+    width: 25rem;
+    height: 18.75rem;
     border: none;
-    border-radius: 10px;
 }
 
 .container01 section h2{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
@@ -378,9 +390,9 @@ COINTAINER 01 - CONTATO
 }
 
 .container01 section div h3{
-    gap: 7px;
+    gap: .438rem;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 1.063rem;
 }
 
 
@@ -390,11 +402,11 @@ CARRINHO
 
 .carrinho{
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 1.875rem;
+    right: 1.875rem;
     z-index: 1;
     background-color: var(--cor-02);
-    padding: 10px;
+    padding: .625rem;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -405,7 +417,7 @@ CARRINHO
 
 .carrinho span{
     color: var(--cor-01);
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .carrinho:hover span{
@@ -443,23 +455,20 @@ MODAL SHOPLIST
     flex-direction: column;
     align-items: center;
     background-color: var(--cor-01);
-    border: 1px solid var(--cor-02);
-    border-radius: 10px;
 }
 
 #modal-shoplist h1{
     font-size: 2.188rem;
     color: var(--cor-02);
-    border-bottom: 1px solid var(--cor-02);
+    border-bottom: .063rem solid var(--cor-02);
 }
 
 #modal-shoplist #shoplist-items{
     width: 90%;
     height: 65%;
-    border-radius: 10px;
-    border: 1px solid var(--cor-01);
+    border: .063rem solid var(--cor-01);
     overflow-y: scroll;
-    padding: 10px;
+    padding: .625rem;
 }
 
 #modal-shoplist #shoplist-items::-webkit-scrollbar{
@@ -469,11 +478,11 @@ MODAL SHOPLIST
 #modal-shoplist #shoplist-items .sl-div-item{
     display: grid;
     grid-template-columns: 10fr 1fr 2fr;
-    border-bottom: 1px solid white;
+    border-bottom: .063rem solid white;
 }
 
 .sp-pdd, .sp-qnt, .sp-valor{
-    padding: 8px 0;
+    padding: .5rem 0;
     text-align: center;
 }
 
@@ -487,17 +496,33 @@ MODAL SHOPLIST
     font-weight: bolder;
 } */
 
-#modal-shoplist button{
-    background-color: var(--cor-02);
-    padding: 7px 15px;
-    font-size: 18px;
-    color: var(--cor-01);
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid var(--cor-02);
+#modal-shoplist .sct-confirme{
+    justify-content: space-between;
+    padding: .625rem;
+    align-items: center;
 }
 
-#modal-shoplist button:hover{
+#modal-shoplist .sct-confirme span input{
+    border: none;
+    border-bottom: 1px solid var(--cor-02);
+    background-color: transparent;
+    width: 5.6rem;
+    font-size: 1rem;
+}
+
+.div-item-buttons input::-webkit-outer-spin-button, #modal-shoplist .sct-confirme span input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#modal-shoplist .sct-confirme button{
+    background-color: var(--cor-02);
+    padding: .438rem 1.5rem;
+    font-size: 1.125rem;
+    color: var(--cor-01);
+    cursor: pointer;
+}
+
+#modal-shoplist .sct-confirme button:hover{
     background-color: var(--cor-01);
     color: var(--cor-02);
 }
@@ -519,13 +544,13 @@ TÍTULO CARDÁPIO
     margin: auto;
     width: fit-content;
     font-size: 2.813rem;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .title-cardapio h1{
-    border-top: 1px solid var(--cor-02);
-    border-bottom: 1px solid var(--cor-02);
-    padding: 3px 30px;
+    border-top: .063rem solid var(--cor-02);
+    border-bottom: .063rem solid var(--cor-02);
+    padding: .188rem 1.875rem;
 }
 
 
@@ -539,7 +564,7 @@ COINTAINER 02 - HAMBURGUER
 }
 
 .container02 .div-item{
-    height: 310px;
+    height: 19.375rem;
 }
 
 .container02 .div-item .div-item-cover{
@@ -581,61 +606,44 @@ COINTAINER 02 - HAMBURGUER
 
 .container02 #novidadeBurger{
     grid-column: 1/3;
-    width: 523.5px;
+    width: 32.719rem;
     grid-row: 1/3;
-    height: 660px;
-    padding: 10px 40px;
+    height: 41.25rem;
+    padding: .625rem 2.5rem;
 }
 
 .container02 #novidadeBurger h1{
-    font-size: 55px;
+    font-size: 3.438rem;
     color: var(--cor-02);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 7px;
-    border-bottom: 1px solid var(--cor-02);
+    letter-spacing: .438rem;
+    border-bottom: .063rem solid var(--cor-02);
 }
 
 .container02 #novidadeBurger h2{
-    font-size: 35px;
+    font-size: 2.1rem;
 }
 
 .container02 #novidadeBurger .novidImg{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     height: 45%;
     width: 70%;
-    border-radius: 10px;
     background: url(img/hamburgueres/img.burger.novidade.jpg) no-repeat center;
     background-size: cover;
-    border: 1px solid var(--cor-02);
 }
 
-.container02 #novidadeBurger2{
-    height: 365px;
+.container02 #novidadeBurger .div-item-cover{
+    height: 68%;
     display: none;
 }
 
-.container02 #novidadeBurger2 .div-item-cover{
-    height: 68%;
-}
-
-.container02 #novidadeBurger2:hover .div-item-cover{
-    bottom: -68%;
-}
-
-.container02 #novidadeBurger2 h1{
-    color: var(--cor-02);
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Verdana, Geneva, Tahoma, sans-serif;
-    border-bottom: 1px solid var(--cor-02);
-}
 
 /*====================================================
 COINTAINER 03 - LANCHES
 ====================================================*/
 
 .container03 .div-item{
-    height: 300px;
+    height: 18.75rem;
 }
 
 .cover07{
@@ -676,7 +684,7 @@ COINTAINER 04 - PORCOES
 ====================================================*/
 
 .container04 .div-item{
-    height: 260px;
+    height: 16.25rem;
 }
 
 .cover13{
@@ -721,34 +729,34 @@ COINTAINER 05 - BEBIDAS
 }
 
 .container05 .div-item{
-    height: 400px;
+    height: 25rem;
     height: fit-content;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     margin: 0 auto;
 }
 
 .container05 .div-item p{
     word-wrap: break-word;
-    height: 70px;
+    height: 4.375rem;
     align-items: center;
     height: fit-content;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
 
 .container05 .div-item h2{
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 500;
     height: fit-content;
-    margin: 10px 0;
-    margin-top: 30px;
+    margin: .625rem 0;
+    margin-top: 1.875rem;
 }
 
 .container05 .div-item h3{
     position: relative;
     padding: 0;
     bottom: 0;
-    margin: 3px 0 10px 0;
+    margin: .188rem 0 .625rem 0;
 }
 
 .container05 .div-item-buttons{
@@ -763,7 +771,7 @@ LANDINGPAGE DESENVOLVEDOR
 
 .main-dev{
     width: 100vw;
-    padding-top: 3.5rem;
+    padding: 5rem 0;
 }
 
 .main-dev > section{
@@ -773,8 +781,6 @@ LANDINGPAGE DESENVOLVEDOR
 .main-dev .mainDev-secImg img{
     width: 70%;
     margin: auto;
-    border-radius: 10px;
-    border: 1px solid var(--cor-02);
 }
 
 .main-dev .mainDev-secTxt{
@@ -844,8 +850,8 @@ LANDINGPAGE CRÉDITOS
     text-align: center;
     margin: 2rem auto;
     font-size: 2.7rem;
-    border-top: 1px solid var(--cor-02);
-    border-bottom: 1px solid var(--cor-02);
+    border-top: .063rem solid var(--cor-02);
+    border-bottom: .063rem solid var(--cor-02);
     width: fit-content;
 }
 
@@ -863,7 +869,7 @@ LANDINGPAGE CRÉDITOS
 .main-cred section ul h2{
     height: 4.1rem;
     align-items: center;
-    border-bottom: 1px solid var(--cor-02);
+    border-bottom: .063rem solid var(--cor-02);
     margin-bottom: 1rem;
 }
 
@@ -873,6 +879,7 @@ LANDINGPAGE CRÉDITOS
 }
 
 .main-cred section ul li a:hover{
+    transition: color .3s;
     color: var(--cor-02);
 }
 
@@ -884,32 +891,31 @@ FOOTER
 footer{
     height: fit-content;
     flex-direction: column;
-    gap: 10px;
+    gap: .625rem;
     align-items: center;
-    padding: 13px;
-    border-top: 1px solid white;
+    padding: .813rem;
+    border-top: .063rem solid white;
     background: #010506;
 }
 
 footer #ftr-vf-id #logoImgOfc{
-    width: 40px;
-    margin-right: 6px;
+    width: 2.5rem;
+    margin-right: .375rem;
 }
 
 footer #ftr-vf-id #logoTxtOfc{
-    width: 130px;
+    width: 8.125rem;
 }
 
 footer #creditos{
-    margin-top: 20px;
-    padding: 6px 33px;
-    border-radius: 30px;
+    margin-top: 1.25rem;
+    padding: .375rem 2.063rem;
     background-color: white;
     cursor: pointer;
 }
 
 footer #creditos:hover{
-    border: 1px solid white;
+    border: .063rem solid white;
     background-color: transparent;
 }
 

@@ -15,9 +15,9 @@
 </head>
 <body id="body">
     <div class="hd-btn-ext" class="dp-flex">
-        <span class="material-symbols-outlined" class="hd-lks-ext3">close</span>
+        <div class="hd-lks-ext3"><span class="material-symbols-outlined">close</span></div>
         <a href="index.html">Home</a>
-        <a href="#contato">Contato</a>
+        <a href="index.html#contato">Contato</a>
         <a href="developer.html">Desenvolvedor</a>
         <a href="https://www.ifood.com.br/">
             <img src="img/logo/img.logo.ifood.png" alt="" id="logoImgIfood">
@@ -30,10 +30,20 @@
 
     <section class="dp-none" id="bg-modal-shoplist"></section>
 
-    <section class="dp-none dp-flex" id="modal-shoplist">
+    <section class="dp-none dp-flex bdr-rad10 bdr-sld-var2" id="modal-shoplist">
         <h1>CARRINHO</h1>
-        <div id="shoplist-items"></div>
-        <button>Pedir</button>
+        <div id="shoplist-items" class="bdr-rad10"></div>
+        <section class="sct-confirme dp-flex wd-100">
+            <span>
+                <label for="numPager">Pager:</label>
+                <input type="number" name="" id="numPager">
+            </span>
+            <button class="bdr-rad10 bdr-sld-var2">Pedir</button>
+            <span>
+                <label for="somaTotal">Total:</label>
+                <input type="text" name="" id="somaTotal" readonly>
+            </span>
+        </section>
     </section>
 
     <header class="wd-100 dp-flex header-cardapio">
@@ -74,21 +84,10 @@
                 <h2 class="dp-flex">Picanha-Man</h2>
                 <p>Pão Brioche da Casa, Maionese de Alho Picante, Hambúrguer de Picanha, Queijo Cheddar, Alface Roxa, Tomate, Creme de Mix de Nozes e Milho Grelhado</p>
                 <h3>23.45</h3>
-                <div class="novidImg"></div>
+                <div class="novidImg bdr-rad10 bdr-sld-var2"></div>
                 <div class="div-item-buttons dp-flex">
                     <button class="btn-less">-</button>
                     <input type="number" name="qntPedido" id="" placeholder="0" min="0">
-                    <button class="btn-more">+</button>
-                </div>
-            </div>
-            <div class="div-item dp-flex"  id="novidadeBurger2">
-                <h1 class="dp-flex">NOVIDADE</h1>
-                <h2 class="dp-flex">Picanha-Man</h2>
-                <p>Pão Brioche da Casa, Maionese de Alho Picante, Hambúrguer de Picanha, Queijo Cheddar, Alface Roxa, Tomate, Creme de Mix de Nozes e Milho Grelhado</p>
-                <h3>23.45</h3>
-                <div class="div-item-buttons dp-flex">
-                    <button class="btn-less">-</button>
-                    <input type="number" name="qntPedido" id="" placeholder="0">
                     <button class="btn-more">+</button>
                 </div>
                 <div class="div-item-cover cover00"></div>
@@ -202,7 +201,7 @@
                 <div class="div-item-cover cover09"></div>
             </div>
             <div class="div-item dp-flex">
-                <h2 class="dp-flex">CatupiHulck</h2>
+                <h2 class="dp-flex">CatupiHulk</h2>
                 <p>Salsicha, Catupiry, Frango, Milho, Ervilhas, Batata Palha e Queijo Ralado</p>
                 <h3>18.99</h3>
                 <div class="div-item-buttons dp-flex">
@@ -475,7 +474,7 @@
         <div>
             <p>&copy;VingaFomes 2022</p>
         </div>
-        <a href="creditos.html" id="creditos">
+        <a href="creditos.html" id="creditos" class="bdr-rad30">
             <h4>CRÉDITOS</h4>
         </a>
     </footer>

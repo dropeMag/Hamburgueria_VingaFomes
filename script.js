@@ -12,11 +12,11 @@ let valorPedido = document.querySelectorAll('h3')
 let openBurger = document.querySelector('.hd-lks-ext2')
 let closeBurger = document.querySelector('.hd-lks-ext3')
 let menuBurger = document.querySelector('.hd-btn-ext')
+let inputSoma = document.getElementById('somaTotal')
 
 // ABRIR MENU BURGER
 openBurger.addEventListener('click', ()=>{
     menuBurger.style.display = 'flex'
-    
 })
 
 // FECHAR MENU BURGER
@@ -49,16 +49,23 @@ for(let i = 0; i < inputQnt.length; i++){
 // ADICIONAR PEDIDO AO CARRINHO
 shopcart.addEventListener('click', ()=>{
     listaPedidos.innerHTML = ``
+    let somaValores = 0
 
     for(let i = 0; i < inputQnt.length; i++){
         if (inputQnt[i].value >= 1){
+            let valorTotal = Number((valorPedido[i].textContent)*inputQnt[i].value)
+
             listaPedidos.innerHTML += `<div class="sl-div-item">
                                             <p class="sp-pdd"> ${nomePedido[i].textContent} </p>
                                             <p class="sp-qnt"> ${inputQnt[i].value}x</p>
-                                            <p class="sp-valor"> R$ ${Number((valorPedido[i].textContent)*inputQnt[i].value).toFixed(2).replace('.', ',')} </p>
+                                            <p class="sp-valor"> R$ ${valorTotal.toFixed(2).replace('.', ',')} </p>
                                         </div>`
+
+            somaValores += valorTotal
         }  
     }
+
+    inputSoma.value = `R$ ${somaValores.toFixed(2).replace('.', ',')}`
 })
 
 
