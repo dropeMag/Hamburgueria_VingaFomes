@@ -96,9 +96,30 @@
     .hd-lks-ext2{
         display: block;
     }
+
+    #modal-shoplist{
+        height: 85vh;
+    }
+
+    #modal-shoplist section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #modal-shoplist section span:nth-child(1), #modal-shoplist section button{
+        order: 1;
+    }
 }
 
 @media (max-width: 510px){
+    .title-cardapio{
+        font-size: 2rem;
+    }
+
+    .title-cardapio h1::before, .title-cardapio h1::after{
+        font-size: 1.5rem;
+    }
+
     #modal-shoplist #shoplist-items .sl-div-item{
         grid-template-columns: 1fr 1fr;
     }
@@ -139,7 +160,6 @@
         display: none;
     }
 
-
     .container02 #novidadeBurger .cover00{
         display: block;
     }
@@ -147,10 +167,6 @@
     .container02 #novidadeBurger:hover .div-item-cover{
         bottom: -68%;
     }
-
-
-
-
 }
 
 @media (max-width: 420px){
@@ -162,11 +178,17 @@
         width: 97%;
     }
 
-    .title-cardapio{
-        font-size: 2rem;
-    }
-
     #modal-shoplist h1{
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px){
+    .title-cardapio{
+        font-size: 1.5rem;
+    }
+
+    .title-cardapio h1::before, .title-cardapio h1::after{
+        font-size: 1rem;
     }
 }

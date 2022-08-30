@@ -13,6 +13,9 @@ let openBurger = document.querySelector('.hd-lks-ext2')
 let closeBurger = document.querySelector('.hd-lks-ext3')
 let menuBurger = document.querySelector('.hd-btn-ext')
 let inputSoma = document.getElementById('somaTotal')
+let btnPedir = document.getElementById('shoplist-pedir')
+let pedidoConf = document.getElementById('shoplist-confirmado')
+
 
 // ABRIR MENU BURGER
 openBurger.addEventListener('click', ()=>{
@@ -68,19 +71,27 @@ shopcart.addEventListener('click', ()=>{
     inputSoma.value = `R$ ${somaValores.toFixed(2).replace('.', ',')}`
 })
 
+btnPedir.addEventListener('click', ()=>{
+    pedidoConf.style.display = 'flex'
+    listaPedidos.innerHTML = ``
+    for(let i = 0; i < inputQnt.length; i++){
+        inputQnt[i].value = ``
+    }    
+})
+
+bg_modal.addEventListener('click', ()=>{
+    pedidoConf.style.display = 'none'
+})
 
 
 
 
 
-
-
-
-// function cu(queima){
-//     let listaItemExcluir = queima.closest(".sl-div-item")
-//     let listaPrecoExcluir = queima.closest(listaPrecos)
+// function apagar(exclua){
+//     let listaItemExcluir = exclua.closest(".sl-div-item")
+//     let listaPrecoExcluir = exclua.closest(listaPrecos)
 //     listaItemExcluir.remove()
 //     console.log(listaPrecoExcluir)
 // }
 
-// <p class="sp-excluir" onclick="cu(event.target)">X</p>
+// <p class="sp-excluir" onclick="apagar(event.target)">X</p>

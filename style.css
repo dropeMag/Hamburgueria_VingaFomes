@@ -23,7 +23,8 @@ GERAL
 body{
     overflow-x: hidden;
     min-height: 100vh;
-    background: linear-gradient(135deg, #000000, #252525, #131313, #1a1a1a, #131313) no-repeat;
+    /* background: linear-gradient(135deg, #000000, #252525, #131313, #1a1a1a, #131313) no-repeat; */
+    background: linear-gradient(135deg, #0d0908, #190b0b, #190202, #210404, #0c0606) no-repeat;
 }
 
 :root{
@@ -201,7 +202,7 @@ header img#logoImgIfood:hover{
 /* ---------------- DIV ITENS */
 .div-item{
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 11.25rem;
     border-radius: .625rem;
     border: .063rem solid var(--cor-02);
@@ -309,7 +310,8 @@ COINTAINER 00 - APRESENTAÇÃO
 
 .container00 .ctn00-txt{
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(10, 0, 0, 0.8);
     text-align: center;
     padding: .625rem 0 3.125rem 0;
 }
@@ -343,6 +345,7 @@ COINTAINER 00 - APRESENTAÇÃO
 }
 
 .container00 p:nth-child(3) strong:hover{
+    transition: .3s;
     border-bottom: .063rem solid var(--cor-03);
     color: var(--cor-03);
 }
@@ -359,6 +362,7 @@ COINTAINER 00 - APRESENTAÇÃO
 }
 
 .container00 a:nth-child(4):hover{
+    transition: .3s;
     background-color: var(--cor-03);
 }
 
@@ -504,10 +508,13 @@ MODAL SHOPLIST
 
 #modal-shoplist .sct-confirme span input{
     border: none;
-    border-bottom: 1px solid var(--cor-02);
     background-color: transparent;
     width: 5.6rem;
     font-size: 1rem;
+}
+
+#modal-shoplist .sct-confirme span:nth-child(1) input{
+    border-bottom: 1px solid var(--cor-02);
 }
 
 .div-item-buttons input::-webkit-outer-spin-button, #modal-shoplist .sct-confirme span input::-webkit-inner-spin-button {
@@ -526,6 +533,38 @@ MODAL SHOPLIST
     background-color: var(--cor-01);
     color: var(--cor-02);
 }
+
+#modal-shoplist #shoplist-confirmado{
+    z-index: 4;
+    position: absolute;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--cor-01);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-shoplist #shoplist-confirmado h3{
+    font-size: 2.5rem;
+    display: block;
+}
+
+#modal-shoplist #shoplist-confirmado a{
+    background-color: var(--cor-02);
+    width: fit-content;
+    margin: 0 auto;
+    padding: .438rem 1.5rem;
+    font-size: 1.125rem;
+    color: var(--cor-01);
+    cursor: pointer;
+}
+
+#modal-shoplist #shoplist-confirmado a:hover{
+    background-color: var(--cor-01);
+    color: var(--cor-02);
+}
+
 
 /*====================================================
 HEADER CARDÁPIO
@@ -548,9 +587,17 @@ TÍTULO CARDÁPIO
 }
 
 .title-cardapio h1{
-    border-top: .063rem solid var(--cor-02);
-    border-bottom: .063rem solid var(--cor-02);
-    padding: .188rem 1.875rem;
+    border-top: .063rem dashed var(--cor-02);
+    border-bottom: .063rem dashed var(--cor-02);
+    padding: .2rem 1rem;
+    align-items: center;
+}
+
+.title-cardapio h1::before, .title-cardapio h1::after{
+    content: "◊";
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 100;
 }
 
 
@@ -602,7 +649,6 @@ COINTAINER 02 - HAMBURGUER
 .cover06{
     background: url(img/hamburgueres/img.burger.cover06.jpg) no-repeat center;
 }
-
 
 .container02 #novidadeBurger{
     grid-column: 1/3;
@@ -819,6 +865,7 @@ LANDINGPAGE DESENVOLVEDOR
 .main-dev .mainDev-secTxt nav a{
     text-align: center;
     opacity: 50%;
+    transition: opacity .5s;
 }
 
 .main-dev .mainDev-secTxt nav a:hover{
@@ -842,6 +889,7 @@ LANDINGPAGE CRÉDITOS
 
 .main-cred{
     width: 100vw;
+    min-height: 88vh;
     padding-top: 4rem;
     margin-bottom: 1.5rem;
 }
@@ -896,6 +944,7 @@ footer{
     padding: .813rem;
     border-top: .063rem solid white;
     background: #010506;
+    background: rgba(1, 5, 6, 0.4);
 }
 
 footer #ftr-vf-id #logoImgOfc{
