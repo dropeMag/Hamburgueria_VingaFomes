@@ -8,7 +8,7 @@
 
 ---
 
-<h4 align="center"> :white_check_mark: Projeto Concluído :white_check_mark: </h4>
+<h4 align="center"> :construction: Projeto em Desenvolvimento :construction: </h4>
 
 A VingaFomes é uma lanchonete fictícia, cuja identidade visual é inspirada em grupo de super-heróis de história em quadrinhos: Os Vingadores. 
 
